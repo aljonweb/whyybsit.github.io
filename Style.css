@@ -85,8 +85,8 @@ body{
 .brand{
 
     font-size: 2.0rem;
-    
-    letter-spacing: 10px;
+    text-align: center;
+    letter-spacing: 8px;
 
     a{
 
@@ -108,24 +108,24 @@ body{
 
     justify-content: center;
     box-shadow: 0 0 5px;
-    padding: 1em;
     display: flex;
     backdrop-filter: blur(30px);
+    padding: 10px;
 }
 
 .nav-link{
 
     align-content: flex-end;
-    justify-items: center;
+    
 
 }
 .nav-link ul{
 
     display: flex;
     list-style-type: none;
-    gap: 4.5em;
+    gap:80px ;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 15px;
     align-items: flex-end;
     
     
@@ -174,15 +174,16 @@ ul li a:hover{
 }
 ul li:hover ul.dropdown{
     display: block;
-    width: 15vw;
+    width: 11vw;
     gap: 60px;
+  
 }
 
 .main-container .content-main{
 
     display: flex;
     padding: 20px;
-    gap: 20px;
+    gap: 50px;
     justify-content: center;
 }
 
@@ -193,12 +194,18 @@ ul li:hover ul.dropdown{
     font-size: 1.3rem;
     text-align: justify;
     
+    h2{
+        text-shadow: -4px 3px 0 #e5a2da,
+      -14px 7px 0 #aac7bd79;
+    }
     
 }
 .main-container  .container-image {
 
     width: 30vw;
+    
 }
+
 .main-container  .container-image img{
 
     background: transparent;
@@ -215,6 +222,14 @@ ul li:hover ul.dropdown{
     border-radius: 5px;
     color: #f2f3f8;
     font-weight: 600;
+    transition: 0.3s;
+}
+.main-container .content .btn:hover{
+
+    transform: scale(1.10);
+    transition: 0.3s;
+    box-shadow: 0 0 10px black;
+  
 }
 
 
@@ -254,6 +269,10 @@ ul li:hover ul.dropdown{
     height: 30vh;
     
    
+}
+.container-featured .card .content .images img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 .container-featured .card .content .images img{
 
@@ -340,25 +359,6 @@ footer{
     color: rgb(36, 202, 144);
 }
 
-.blog-container{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    gap: 20px;
-    padding: 20px;
-}
-.page-container .card-container{
-    width: 50%;
-    text-align: justify;
-    padding: 100px;
-    box-shadow: 0 0 20px;
-}
-.page-side-container .card-container{
-    width: 100%;
-    padding: 100px;
-   text-align: justify;
-   box-shadow: 0 0 20px;
-}
 
 .section-branches{
     width: 100%;
@@ -367,9 +367,8 @@ footer{
     background-color: #c8c8c8;
     flex-wrap: wrap;
 
-    h2{
-        color: #3d0860;
-        
+    h1{
+        text-shadow: -4px 3px 0 #ebb2e1;
     }
 }
 .section-branches .card-branches{
@@ -412,6 +411,10 @@ footer{
     box-shadow: 0 0 10px;
     object-fit: cover;
 }
+.card-branches .images img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
 .section-branches h2{
     font-size: 2rem;
     font-weight: 800;
@@ -421,7 +424,7 @@ footer{
     width: 100%;
     height: 100%;
     padding: 20px;
-    
+   
 }
 .program-content{
     
@@ -468,7 +471,7 @@ footer{
     
 }
 .three-container .content{
-    height: 60vh;
+    height: 80vh;
     text-align: justify;
     justify-content: center;
     box-shadow: 0 0 10px 5px rgb(118, 5, 136);
@@ -478,9 +481,60 @@ footer{
 .three-container .content img{
     width: 100%;
     height: 10vw;
-    object-fit: bottom;
+    object-fit: cover;
+    
 
 }
+.three-container .content img:hover{
+    transform: scale(1.09);
+    transition: 0.3s;
+    border-radius: 15px;
+}
+.three-container .content h4{
+    font-weight: 1000;
+    color: #3d0860;
+
+   
+}
+.three-container .content h5{
+    color: hsl(341 63% 79%);
+}
+.h1 h1{
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-shadow: -4px 3px 0 #ebb2e1;
+}
+.main-about{
+    display: flex;
+}
+.main-about .about-content{
+   width: 100%;
+   padding: 20px;
+}
+.about-content img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.content-about h1{
+   text-align: center;
+}
+
+.content-about{
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 0 10px 5px rgb(118, 5, 136);
+    border-radius: 15px;
+}
+.about-section{
+    flex-wrap: wrap;
+}
+
 .about-container .content{
     width: 100%;
     padding: 20px;
@@ -491,6 +545,7 @@ footer{
     margin-bottom: 20px;
     font-size: 3rem;
     color: #3d0860;
+    text-shadow: -4px 0 0 #9d3ce8;
   
 }
 
@@ -498,6 +553,7 @@ footer{
     margin-bottom: 20px;
     font-size: 3rem;
     color: #3d0860;
+    text-shadow: -4px 0 0 #9d3ce8;
 }
 
 @media only screen and (max-width: 600px){
@@ -553,18 +609,21 @@ footer{
 
     .brand h1{
         
-        font-size: 17px;
+        font-size: 13px;
         letter-spacing: 5px;
         
         
     }
-    
-    
-    
-    .nav-link ul{
-
-        gap: 12px;
+    .navagation{
+        text-align: center;
+        
     }
+    .nav-link ul{
+        gap: 15px;
+    }
+    
+    
+    
     .nav-link ul li a{
     
         
@@ -577,18 +636,13 @@ footer{
        
     }
     
-    
-    .main-container .content-main {
-        flex-wrap: wrap;
-    }
-    
     .main-container  .content-main .context{
     
       font-size: 15px;
      
     }
     .main-container  .container-image {
-      
+        object-fit: cover;
         margin-top: 30px;
     }
     .main-container  .container-image img{
@@ -626,6 +680,9 @@ footer{
         margin-top: 40px;
 
     }
+    .section-branches{
+        font-size: 15px;
+    }
     .section-branches .card-branches img{
         width: 30vw;
     }
@@ -635,12 +692,9 @@ footer{
     .groupofcontent .content-footer{
         width: 100%;
         font-size: 10px;
-        margin-right: 20px;
-    }
-    .groupofcontent {
-        gap: 20px;
        
     }
+    
     .groupofcontent {
         font-size: 15px;
        
@@ -648,8 +702,11 @@ footer{
     .content-footer .mylife img{
         border-radius: 5%;
     }
-    .groupofcontent .content-footer li{
-        margin-top: 10px;
-    }  
+
+
+    .section-about{
+        font-size: 15px;
+    }
+    
 }
 
